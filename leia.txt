@@ -1,0 +1,38 @@
+
+#Para Executar o projeto
+  Clicar botao direito da classe APP e apertar Run As-> Java Aplication
+
+#Verificar se o APLICATIVO está On-Line(Após EXECUTAR O PASSO ANTERIOR)
+   http://localhost:8080/
+   
+#Rotas usadas no POSTMAN
+Para Criptografar uma mensagem:
+     URL: http://localhost:8080/imperador/cripto  
+     Header:
+       Content-Type: application/json
+       Accept: application/json
+     Body raw:
+       {"msg": "a ligeira raposa marrom saltou sobre o cachorro cansado"}
+     Json de Retorno para o POSTMAN:
+      {
+       "msg": "d oljhlud udsrvd pduurp vdorrx vreuh r fdfkruur fdqvdgr",
+       "status": "ok"
+      }  
+       
+Para Descriptografar uma mensagem:
+     URL: http://localhost:8080/imperador/descripto  
+     Header:
+       Content-Type: application/json
+       Accept: application/json
+     Body raw:
+       {"msg": "d oljhlud udsrvd pduurp vdowrx vreuh r fdfkruur fdqvdgr"}       
+     Json de Retorno para o POSTMAN:
+      {
+       "msg": "a ligeira raposa marrom saltou sobre o cachorro cansado",
+       "status": "ok"
+      }  
+       
+ #Para executar TESTES JUNIT
+ Com botão direito em AppTeste Run As -> JUnit Test   
+    Executará os testes nos métodos testDescript, testApp e testCripto   
+       

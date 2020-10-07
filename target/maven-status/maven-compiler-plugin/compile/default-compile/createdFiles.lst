@@ -1,0 +1,6 @@
+br\com\cripto\imperador\model\MensagemIn.class
+br\com\cripto\imperador\App.class
+br\com\cripto\imperador\controller\EnigmaController.class
+br\com\cripto\imperador\model\MensagemOut.class
+br\com\cripto\imperador\service\Enigma.class
+br\com\cripto\imperador\controller\OnLineController.class
